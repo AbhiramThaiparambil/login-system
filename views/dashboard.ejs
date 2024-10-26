@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <link rel="stylesheet" href="/static/style.css" type="text/css" media="all">
+    <title><%= locals.title ? locals.hj : 'Login Page' %></title>
+</head>
+
+<body class="main">
+     <section class="main2" style="z-index: 900;">
+        <h1 style="font-size: 50px; color:#ffffff; background-color: rgb(0, 0, 0); margin-top: -200px;">Login Successfully!!</h1>
+        <div class="w3lhny-register loginsuccDiv" style="margin-top: -500px;">
+               
+                 <h3 style="color: #614911;"><%=user%></h3>
+                
+                <h3 style="color:#694f12;">Do you want to log out?</h3>
+                 
+                
+                <a href="/route/logout"><button class="btn btn-login " > Log Out </button></a>
+          
+        </div>
+
+    </section>
+</body>
+</html>

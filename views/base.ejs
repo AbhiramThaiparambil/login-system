@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css" type="text/css" media="all" />
+    <link href="//fonts.googleapis.com/css?family=Mukta:300,400,500" rel="stylesheet" />
+    <title><%= locals.title ? hj : 'Login Page' %></title>
+</head>
+<body>
+    <section class="main">
+        <div class="w3lhny-register">
+            <div class="iconhnyd">
+                <h1 id="textTopForm">REGISTER HERE</h1>
+                <title>Login Error</title>
+            </div>
+            <form action="/route/Login" method="post" class="register-form">
+                <fieldset>
+                    <div class="form">
+                        <div class="form-row">
+                            <label style="background-color: rgba(6, 27, 27, 0.642); color: #c5c509;">Abhiram</label>
+                            <input type="text" class="form-text" id="name" name="name" />
+                        </div>
+                        <div class="form-row">
+                            <label style="background-color: rgba(6, 27, 27, 0.642); color: rgb(197, 197, 9);">abhiram@gmail.com</label>
+                            <input type="email" class="form-text" placeholder="Email Address" id="email" name="email" />
+                        </div>
+                        <div class="form-row">
+                            <label style="background-color: rgba(6, 27, 27, 0.642); color: #c5c509;">121</label>
+                            <input type="text" class="form-text" placeholder="Password" id="password" name="password" />
+                        </div>
+                        <div class="form-row button-login">
+                            <button class="btn btn-login">Login</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <h5 style="color: #f70000"><%= a %></h5>
+        </div>
+    </section>
+</body>
+</html>
